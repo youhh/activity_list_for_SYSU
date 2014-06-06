@@ -1,0 +1,104 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+a{ text-decoration:none; outline:none;}
+ul li{ list-style:none;}
+body{ background:#e0e0e0;color:#404040;font: 12px/1.5 "Microsoft Yahei";}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{
+	clear:both;
+	overflow:hidden;
+}
+.clearfix{
+    zoom:1;
+}
+.opacity{
+  filter:alpha(opacity=85); /* for ie */   
+  -moz-opacity:0.85; /* for ff */   
+  -khtml-opacity: 0.85; /* for webkit as chrome */   
+  opacity: 0.85; /* for opera */ 	
+}
+.radius{
+   border-radius:2px;     
+   -webkit-border-radius:2px;   
+   -moz-border-radius:2px;   
+}
+.Shadow{
+	box-shadow:0 2px 2px 
+	rgba(0, 0, 0, 0.2),0 1px 5px
+	rgba(0, 0, 0, 0.2), 0 0 0 12px
+	rgba(255, 255, 255, 0.2);	
+}	
+#warpper{ width:960px; height:100%; margin:0 auto; padding:10% 0;}
+#LoginWarp{ width:333px; height:auto; margin:0 auto; padding:15px; background:url(../images/formbg.png) no-repeat; overflow:hidden;}
+.loginform{ background:#ffffff; width:304px; height:auto; padding:10px;color:#7E7975; }
+.loginform  h1 .log-in, .loginform h1 .sign-up {display: inline-block;text-transform: uppercase;}
+.loginform h1{
+  font-size:15px;
+  line-height:1;
+  color:#BDB5AA;
+  font-weight:700;
+  padding-bottom:8px;
+  border-bottom:1px solid #EBE6E2;
+  text-shadow:0 2px 0 rgba(255, 255, 255, 0.8);
+  box-shadow:0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.loginform h1 .log-in {
+  color: #6C6763;
+  padding-right: 2px;
+}
+.loginform h1 .sign-up {
+  color: #FFB347;
+  padding-left:2px;
+}
+
+.signup{
+	padding-top: 3px;
+	margin-bottom: 0;
+	text-align: right;
+}
+
+.loginform .mr5{ margin-right:20px;}
+.loginform p.input{
+  padding-top:6px;
+  border-top:1px solid rgba(255, 255, 255, 1);
+  overflow:hidden;
+}
+.loginform input.user{background:url(../images/user_bg.png) right 8px no-repeat; background-color:#fff;}
+.loginform input.password{background:url(../images/user_bg.png) right -54px no-repeat; background-color:#fff;}
+.loginform input{border:2px solid #e7e7e7;border-radius:4px; background-color:#fff;  color:#888;}
+.loginform input.txt{ width:95.4%; height:30px; line-height:30px; padding:2px 5px; font-size:14px;}
+.loginform input:focus{border:1px solid #aaddaa;background-color:#ffffff;}
+.loginform p.submit{margin:20px auto 0; width:100%;}
+.loginform a.log-twitter {
+	margin-right: 1%;
+	background: #34A5CF;
+	border: 1px solid #2B8BC7;
+	color: white;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+.loginform a.log-twitter:hover{ background-color:#2A8AC4;}
+.loginform input.sub{
+	margin-left: 1%;
+	background: #FBD568;
+	border: 1px solid #F4AB4C;
+	color: #996319;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+}
+.loginform input.sub:hover{ background-color:#FFB347;}
+.loginform input.sub, .loginform a.log-twitter {
+	width: 100%;
+	float:left;
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+	border-radius:3px;
+	cursor: pointer;
+	font:18px/38px 'Microsoft Yahei', Calibri, Arial, sans-serif;
+	text-align: center;
+}
+.demopowerby{ color:#666666; width:100%; margin:20px auto 0; font-size:12px; text-shadow: 1px 1px 0 #999999; text-align:center;}

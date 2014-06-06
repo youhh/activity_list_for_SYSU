@@ -1,0 +1,80 @@
+﻿<?php
+	$comment = $_POST["comment"];
+?>
+
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>中大课室活动表</title>
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/www/app/css/normalize.css">
+    <link rel="stylesheet" href="/www/app/css/style.css">
+</head>
+<body>
+    <header>
+		<!--class="logo"--> 
+		<div id="title">
+        <a id="title" href="index.php"><h1>中大课室活动表</h1></a>
+		</div>
+        <ul class="mainMenu">
+            <li><a href="/www/app/index.php/Index/index.html">首页</a></li>
+            <li><a href="#">课程</a></li>
+            <li class="selected"><a href="#">活动</a></li>
+            <li><a href="#">自习室</a></li>
+            <li><a href="/www/app/index.php/User/login.html">登录</a></li>
+            <li><a href="/www/app/index.php/User/signup.html">注册</a></li>
+        </ul>
+    </header>
+    <div class="wrapMain">
+        <div role="main" class="main">
+			<a href="#"><div id="button">收藏</div></a>
+            <div id="haedline"><h2><?php $activity="《理想·现实与志向》讲座预告"; echo $activity; ?><a href="#"><div id="button">赞</div></a></div>
+			<div class="poster">
+				<img class="img" src="/www/app/img/poster.jpg" alt="poster" />
+			</div>
+			<div class="intro">
+				<h3>活动时间</h3>
+				<p><?php $time="2014.3.18（周五） 19:00~21:00";echo $time;?></p>
+				<h3>活动地点</h3>
+				<p><?php $classroom="图书馆副楼讲学厅"; echo $classroom;?></p>
+				<h3>活动内容</h3>
+				<p><?php $content="博学讲坛讲座预告 主题： 主讲人：范以锦"; echo $content?></p>
+				<h3>发布人</h3>
+				<p><?php $content="守望者"; echo $content?></p>
+			</div>
+		</div>
+ 
+
+		<div class="comment">
+			<div class="commentList">
+				<ul>活动讨论
+				<li class="comleft"><img class="portrait" src="/www/app/img/portrait.jpg" alt="portrait"></li>
+				<li class="comleft"><h5>用户</h5></li>
+				<li class="comright"><p>年月日</p></li>
+				<li class="comContent"><p><?php echo $comment ?>内容</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="input">
+			<form action="activity.php" method="post">
+				<fieldset>
+					<legend class="field">评论</legend>
+					<textarea name="comment" row="20" cols="50" value="请输入评论！">
+					</textarea>
+				<button class="button" type="submit" value="提交" />发表</fieldset>
+			</form>
+		</div>
+	</div>
+	
+    <footer>
+        <div class="footerInner">
+            <p class="copy">Copyright Information Goes Here &copy; 2014. All Rights Reserved. </p>
+        </div>
+    </footer>
+
+<!--[if lte IE 8]><script src="js/ie8AndBelow.js"></script><![endif]-->
+</body>
+</html>
